@@ -1,0 +1,102 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid d-flex justify-content-space-around col-11">
+        <div class="d-flex justify-content-center align-items-center ">
+            <a class="navbar-brand" href="#">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 16 16" fill="none">
+                        <path fill="#1D9BF0"
+                            d="M13.567 5.144c.008.123.008.247.008.371 0 3.796-2.889 8.173-8.172 8.173v-.002A8.131 8.131 0 011 12.398a5.768 5.768 0 004.25-1.19 2.876 2.876 0 01-2.683-1.995c.431.083.875.066 1.297-.05A2.873 2.873 0 011.56 6.348v-.036c.4.222.847.345 1.304.36a2.876 2.876 0 01-.89-3.836 8.152 8.152 0 005.92 3 2.874 2.874 0 014.895-2.619 5.763 5.763 0 001.824-.697 2.883 2.883 0 01-1.262 1.588A5.712 5.712 0 0015 3.656a5.834 5.834 0 01-1.433 1.488z" />
+                    </svg>
+                </div>
+            </a>
+            <form class="d-flex" role="search">
+                <div class="input-group ">
+                    <span class="bg-white border-end-0 rounded-start  border d-flex align-items-center"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 1024 1024"
+                            class="icon ms-2" version="1.1">
+                            <path d="M622.4 682.453333l60.330667-60.309333 256.405333 256.405333-60.330667 60.309334z"
+                                fill="#616161" />
+                            <path
+                                d="M426.666667 426.666667m-341.333334 0a341.333333 341.333333 0 1 0 682.666667 0 341.333333 341.333333 0 1 0-682.666667 0Z"
+                                fill="#616161" />
+                            <path d="M692.266667 753.92l60.309333-60.330667 185.514667 185.514667-60.330667 60.330667z"
+                                fill="#37474F" />
+                            <path
+                                d="M426.666667 426.666667m-277.333334 0a277.333333 277.333333 0 1 0 554.666667 0 277.333333 277.333333 0 1 0-554.666667 0Z"
+                                fill="#64B5F6" />
+                            <path
+                                d="M573.866667 302.933333c-36.266667-42.666667-89.6-68.266667-147.2-68.266666s-110.933333 25.6-147.2 68.266666c-8.533333 8.533333-6.4 23.466667 2.133333 29.866667 8.533333 8.533333 23.466667 6.4 29.866667-2.133333C341.333333 296.533333 381.866667 277.333333 426.666667 277.333333s85.333333 19.2 115.2 53.333334c4.266667 4.266667 10.666667 8.533333 17.066666 8.533333 4.266667 0 10.666667-2.133333 12.8-4.266667 8.533333-8.533333 8.533333-23.466667 2.133334-32z"
+                                fill="#BBDEFB" />
+                        </svg></span>
+                    <input class="form-control border-start-0  border " style="box-shadow:none; width: 150px;"
+                        type="text" placeholder="Twitter'da Ara" id="example-search-input">
+                </div>
+            </form>
+            
+            <li class="nav-item dropdown mx-2 " style="list-style:none;">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="" alt="" class="rounded-circle bg-dark me-1" style="height: 30px; width:30px; ">
+                Profil Adı
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Var olan bir hesap ekle </a></li>
+                <li><a class="dropdown-item" href="#">... hesabından çıkış yap</a></li>
+            </ul>
+        </li>
+    </div>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Keşfet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bildirimler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mesajlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Yer İşaretleri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Listeler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Daha Fazla
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Konular</a></li>
+                        <li><a class="dropdown-item" href="#">Twitter Çevresi</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">İçerik Üreticisi Stüdyosu</a></li>
+                        <li><a class="dropdown-item" href="#">Profesyonel Araçlar</a></li>
+                        <li><a class="dropdown-item" href="#">Ayarlar ve Destek</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
