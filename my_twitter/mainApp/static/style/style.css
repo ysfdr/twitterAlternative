@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.profile-name{
+    font-weight: bold;
+}
+.profile-address{
+    font-size: smaller;
+    color: gray;
+}
+.button-tweet{
+    background-color: #1A8CD8;
+    font-weight: 500;
+}
+
+.navbar-button{
+    border: 0px;    
+    background-color:#F8F9FA ;
+    color: black;
+}
+.navbar-button:hover{
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.news-twitts{
+    list-style: none;
+}
+.news-twitt-cat{
+    color: gray;
+    font-size: smaller;
+}
+.news-twitt-header{
+    font-weight: bold;
+}
+.news-twitt-amount{
+    color: gray;
+    font-size: smaller;
+}
+
