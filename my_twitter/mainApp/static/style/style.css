@@ -41,3 +41,23 @@
     font-size: smaller;
 }
 
+
+
+@media screen and (max-width: 1200px) {
+    .navbar-links-text{
+        display: none !important;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 992px) {
+    
+
+    
+  }
+
+
+
+
+  

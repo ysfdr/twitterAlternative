@@ -3,9 +3,9 @@
 <nav class="navbar navbar-expand-lg bg-light py-0">
 
     <div class="container-fluid d-flex justify-content-around col-12 ">
-        <div class="col-3 d-flex justify-content-center">
+        <div class="col-4 col-lg-3 d-flex justify-content-center navi-left-con">
             <div class="col-11 d-flex justify-content-around align-items-center ">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand p-0" href="#">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 16 16"
                             fill="none">
@@ -19,7 +19,7 @@
                     <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="" alt="" class="rounded-circle bg-dark me-1" style="height: 30px; width:30px; ">
-                        <div class="profil m-0 p-0">
+                        <div class="profil m-0 p-0 navbar-links-text">
                             <p class="profile-name m-0 p-0">Yusuf Duru</p>
                             <p class="profile-address m-0 p-0">@_halimiz_duman</p>
                         </div>
@@ -29,11 +29,11 @@
                         <li><a class="dropdown-item" href="#">... hesabından çıkış yap</a></li>
                     </ul>
                 </li>
-                <button class="button-tweet col-4 btn btn-sm btn-info text-white rounded-pill">Tweetle</button>
+                <button class="button-tweet col-5 col-lg-4 btn btn-sm btn-info text-white rounded-pill">Tweetle</button>
             </div>
         </div>
 
-        <div class="nav-links d-flex justify-content-center col-6">
+        <div class="nav-links d-flex justify-content-center col-6 ">
 
             <ul class="nav col-12 d-flex justify-content-center  mb-2 mb-lg-0">
 
@@ -56,12 +56,12 @@
                         <div class="col-12 d-flex justify-content-center navbar-links-text m-0">Keşfet</div>
                     </a>
                 </li>
-                <li class="nav-item m-0 justify-content-center col-2">
+                {% comment %} <li class="nav-item m-0 justify-content-center col-2">
                     <a class="nav-link justify-content-center  navbar-button rounded-pill p-1 col-12" href="#">
                         <div class="col-12 d-flex justify-content-center"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:25px; " class=" r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z"></path></g></svg></div>
                         <p class="navbar-links-text d-flex justify-content-center col-12 m-0">Bildirimler</p>  
                     </a>
-                </li>
+                </li> {% endcomment %}
                 <li class="nav-item m-0 justify-content-center col-2">
                     <a class="nav-link justify-content-center  navbar-button rounded-pill p-1 col-12" href="#">
                         <div class="col-12 d-flex justify-content-center"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:25px;" class="col-6 r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z"></path></g></svg></div>
@@ -87,21 +87,21 @@
 
 
         </div>
-        <div class="nav-right d-flex justify-content-center col-3">
+        <div class="nav-right d-flex justify-content-center col-2 col-lg-3">
            
-                <button type="button col-4" class=" p-0 navbar-button rounded-pill p-2">
+                <button type="button col-4" class=" p-0 navbar-button rounded-pill p-1">
                     <svg viewBox="0 0 24 24" aria-hidden="true" style="width:25px;" class="col-6 r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z"></path></g></svg>
-                    <p class="col-12 m-0">Bildirimler</p> 
+                    <p class="col-12 m-0 navbar-links-text">Bildirimler</p> 
                 </button>
-                <button type="button col-4" class=" p-0 navbar-button rounded-pill p-2">
+                <button type="button col-4" class=" p-0 navbar-button rounded-pill p-1">
                     <svg viewBox="0 0 24 24" aria-hidden="true" style="width:25px;" class="col-6 r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z"></path></g></svg>
-                    <p class="col-12 m-0">Profil</p> 
+                    <p class="col-12 m-0 navbar-links-text">Profil</p> 
                 </button>
 
                 <div class="dropdown col-4">
-                    <button class=" navbar-button rounded-pill p-2 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class=" navbar-button rounded-pill p-1 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <svg viewBox="0 0 24 24" aria-hidden="true" style="width:25px;" class="col-6 r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"></path></g></svg>
-                      <p class="col-12 m-0">Daha fazla</p>  
+                      <p class="col-12 m-0 navbar-links-text">Daha fazla</p>  
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Konular</a></li>
