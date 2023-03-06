@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+<section class="row d-flex">
+    <!-- LEFT SIDE -->
+
+    <aside class="col-4 col-lg-3 bg-light" style="height:100vh;">
+
+        <div class="news-con col-12 mt-5 row d-flex justify-content-center">
+            
+            <p class="col-12 text-center">Henüz bir hesabın yok mu?</p>
+            <div class="buttons-con row justify-content-center">
+                
+                <a href="/register/" class="col-12 d-flex justify-content-center text-decoration-none">
+                    <button
+                        class="col-9 btn btn-primary rounded-pill px-4 my-2 d-flex justify-content-center align-items-center">
+
+                        <p class="mb-0 mx-2">Kaydol</p>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN PAGE -->
+
+    <article class="col-8 col-lg-6 ">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex mt-4 justify-content-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 16 16" fill="none">
+                    <path fill="#1D9BF0"
+                        d="M13.567 5.144c.008.123.008.247.008.371 0 3.796-2.889 8.173-8.172 8.173v-.002A8.131 8.131 0 011 12.398a5.768 5.768 0 004.25-1.19 2.876 2.876 0 01-2.683-1.995c.431.083.875.066 1.297-.05A2.873 2.873 0 011.56 6.348v-.036c.4.222.847.345 1.304.36a2.876 2.876 0 01-.89-3.836 8.152 8.152 0 005.92 3 2.874 2.874 0 014.895-2.619 5.763 5.763 0 001.824-.697 2.883 2.883 0 01-1.262 1.588A5.712 5.712 0 0015 3.656a5.834 5.834 0 01-1.433 1.488z" />
+                </svg>
+            </div>
+            <div class="row d-flex justify-content-center ">
+                <h1 class="col-12 d-flex justify-content-center my-3">Twitter'a giriş yap</h1>
+
+                <div class="col-12 buttons-con row justify-content-center">
+
+                    <button
+                        class="col-7 btn btn-light rounded-pill px-4 my-3 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32"
+                            fill="none">
+                            <path
+                                d="M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109Z"
+                                fill="#4285F4" />
+                            <path
+                                d="M16.2863 29.9998C20.1434 29.9998 23.3814 28.7553 25.7466 26.6086L21.2386 23.1863C20.0323 24.0108 18.4132 24.5863 16.2863 24.5863C12.5086 24.5863 9.30225 22.1441 8.15929 18.7686L7.99176 18.7825L3.58208 22.127L3.52441 22.2841C5.87359 26.8574 10.699 29.9998 16.2863 29.9998Z"
+                                fill="#34A853" />
+                            <path
+                                d="M8.15964 18.769C7.85806 17.8979 7.68352 16.9645 7.68352 16.0001C7.68352 15.0356 7.85806 14.1023 8.14377 13.2312L8.13578 13.0456L3.67083 9.64746L3.52475 9.71556C2.55654 11.6134 2.00098 13.7445 2.00098 16.0001C2.00098 18.2556 2.55654 20.3867 3.52475 22.2845L8.15964 18.769Z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M16.2864 7.4133C18.9689 7.4133 20.7784 8.54885 21.8102 9.4978L25.8419 5.64C23.3658 3.38445 20.1435 2 16.2864 2C10.699 2 5.8736 5.1422 3.52441 9.71549L8.14345 13.2311C9.30229 9.85555 12.5086 7.4133 16.2864 7.4133Z"
+                                fill="#EB4335" />
+                        </svg>
+                        <p class="mb-0 mx-2">Google ile oturum açın</p>
+                    </button>
+
+                    <button
+                        class="col-7 btn btn-light rounded-pill px-4 my-3 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" />
+                        </svg>
+                        <p class="mb-0 mx-2">Apple ile giriş yap</p>
+                    </button>
+                    <div class="col-12 text-center">
+                        veya
+                    </div>
+                    <div class="col-7 ">
+                        
+                        <input type="email" class="form-control my-3" placeholder="E-posta adresi" name="email"
+                            id="validationServer06" aria-describedby="validationServer05Feedback" required>
+
+                        <input type="password" class="form-control " placeholder="Parola" name="password1" id="validationServer12"
+                            required>    
+                        <button class="btn btn-success col-12  my-4 rounded-pill">Giriş Yap</button>
+
+                        <button class="btn btn-light col-12 border rounded-pill">Şifreni mi unuttun?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <!-- RIGHT SIDE -->
+    <aside class=" col-lg-3 d-none d-lg-inline page-right-side p-0 bg-light" style="height:100vh;">
+
+        <div class="news-con col-12  d-flex justify-content-center">
+            <div class="news bg-white p-1 col-11 rounded-3">
+                <h5>Twitter'da yeni misin?</h5>
+                <p class="text-secondary">Kişiselleştirilmiş zaman akışını almak için hemen kaydol!</p>
+
+                <div class="buttons-con row justify-content-center">
+
+                    <button
+                        class="col-9 btn btn-light rounded-pill px-4 my-2 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32"
+                            fill="none">
+                            <path
+                                d="M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109Z"
+                                fill="#4285F4" />
+                            <path
+                                d="M16.2863 29.9998C20.1434 29.9998 23.3814 28.7553 25.7466 26.6086L21.2386 23.1863C20.0323 24.0108 18.4132 24.5863 16.2863 24.5863C12.5086 24.5863 9.30225 22.1441 8.15929 18.7686L7.99176 18.7825L3.58208 22.127L3.52441 22.2841C5.87359 26.8574 10.699 29.9998 16.2863 29.9998Z"
+                                fill="#34A853" />
+                            <path
+                                d="M8.15964 18.769C7.85806 17.8979 7.68352 16.9645 7.68352 16.0001C7.68352 15.0356 7.85806 14.1023 8.14377 13.2312L8.13578 13.0456L3.67083 9.64746L3.52475 9.71556C2.55654 11.6134 2.00098 13.7445 2.00098 16.0001C2.00098 18.2556 2.55654 20.3867 3.52475 22.2845L8.15964 18.769Z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M16.2864 7.4133C18.9689 7.4133 20.7784 8.54885 21.8102 9.4978L25.8419 5.64C23.3658 3.38445 20.1435 2 16.2864 2C10.699 2 5.8736 5.1422 3.52441 9.71549L8.14345 13.2311C9.30229 9.85555 12.5086 7.4133 16.2864 7.4133Z"
+                                fill="#EB4335" />
+                        </svg>
+                        <p class="mb-0 mx-2">Google ile kaydolun</p>
+                    </button>
+
+                    <button
+                        class="col-9 btn btn-light rounded-pill px-4 my-2 d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" />
+                        </svg>
+                        <p class="mb-0 mx-2">Apple ile kaydol</p>
+                    </button>
+
+                    <button
+                        class="col-9 btn btn-light rounded-pill px-4 my-2 d-flex justify-content-center align-items-center">
+
+                        <p class="mb-0 mx-2">Hesap oluştur</p>
+                    </button>
+
+                </div>
+                <p class="text-secondary">By signing up, you agree to the <a href="">Terms of Service</a> and <a
+                        href="">Privacy Policy</a> , including <a href="">Cookie Use</a> .</p>
+                <p class="text-secondary">
+                    <a href="" class="text-secondary text-decoration-none">Hizmet Şartları</a>
+                    <a href="" class="text-secondary text-decoration-none">Gizlilik Politikası</a>
+                    <a href="" class="text-secondary text-decoration-none">Çerez Politikası</a>
+                    <a href="" class="text-secondary text-decoration-none">Imprint</a>
+                    <a href="" class="text-secondary text-decoration-none">Erişilebilirlik</a>
+                    <a href="" class="text-secondary text-decoration-none">Reklam bilgisi</a>
+                    <a href="" class="text-secondary text-decoration-none">Daha fazla</a>
+                    © 2023 Twitter, Inc.
+                </p>
+            </div>
+        </div>
+
+    </aside>
+
+</section>
+
+
+
+{% endblock body %}

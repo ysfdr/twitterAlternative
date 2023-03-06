@@ -22,8 +22,10 @@
 }
 .navbar-button:hover{
     cursor: pointer;
-    background-color: rgb(207, 207, 207);
+    scale: 1.1;
+    
     color: black;
+    transition: .4s;
 }
 
 .news-twitts{
@@ -59,6 +61,30 @@
 }
 
 
+
+.background-image{
+    position:relative;
+    
+}
+.profile-photo{
+    width: 120px !important;
+    
+    position:absolute;
+    bottom: -60px;
+    left: 15px;
+    z-index: 1;
+}
+
+.profile-photo2{
+    width: 130px !important;
+    background-color: white !important;
+    position:absolute;
+    bottom: -65px;
+    left: 10px;
+    
+}
+
+
 @media screen and (max-width: 1200px) {
     .navbar-links-text{
         display: none !important;
@@ -75,5 +101,53 @@
 
 
 
-
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    margin: 5px auto;
+    padding: 20px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
   
