@@ -4,90 +4,115 @@
 
 {% block body %}
 <section class="row d-flex">
-<!-- LEFT SIDE -->
+    <!-- LEFT SIDE -->
 
-<aside class="col-4 col-lg-3 bg-light" style="height:100vh;">
-    <div class="search-con col-12 d-flex justify-content-center">
-        <form class="col-11 d-flex " role="search">
-            <div class="input-group ">
-                <span class="bg-white border-end-0 rounded-start  border d-none d-md-flex  align-items-center"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 1024 1024"
-                        class="icon ms-2" version="1.1">
-                        <path d="M622.4 682.453333l60.330667-60.309333 256.405333 256.405333-60.330667 60.309334z"
-                            fill="#616161" />
-                        <path
-                            d="M426.666667 426.666667m-341.333334 0a341.333333 341.333333 0 1 0 682.666667 0 341.333333 341.333333 0 1 0-682.666667 0Z"
-                            fill="#616161" />
-                        <path d="M692.266667 753.92l60.309333-60.330667 185.514667 185.514667-60.330667 60.330667z"
-                            fill="#37474F" />
-                        <path
-                            d="M426.666667 426.666667m-277.333334 0a277.333333 277.333333 0 1 0 554.666667 0 277.333333 277.333333 0 1 0-554.666667 0Z"
-                            fill="#64B5F6" />
-                        <path
-                            d="M573.866667 302.933333c-36.266667-42.666667-89.6-68.266667-147.2-68.266666s-110.933333 25.6-147.2 68.266666c-8.533333 8.533333-6.4 23.466667 2.133333 29.866667 8.533333 8.533333 23.466667 6.4 29.866667-2.133333C341.333333 296.533333 381.866667 277.333333 426.666667 277.333333s85.333333 19.2 115.2 53.333334c4.266667 4.266667 10.666667 8.533333 17.066666 8.533333 4.266667 0 10.666667-2.133333 12.8-4.266667 8.533333-8.533333 8.533333-23.466667 2.133334-32z"
-                            fill="#BBDEFB" />
-                    </svg></span>
-                <input class="form-control border-start-0  border " style="box-shadow:none; width: 150px;" type="text"
-                    placeholder="Twitter'da Ara" id="example-search-input">
-            </div>
-        </form>
-    </div>
-    <div class="news-con col-12 mt-3 d-flex justify-content-center">
-        <div class="news bg-white p-1 pe-0 col-12 col-sm-11 rounded-3">
-            <h5>İlgini çekebilecek gündemler</h5>
-            <div class="news-twitts-con ">
-                <ul class="news-twitts p-1">
-                    <li class="news-twitt-cat">Twitt kategorisi</li>
-                    <li class="news-twitt-header">#Twitt başlığı</li>
-                    <li class="news-twitt-amount">30,2B Tweet</li>
-                </ul>
-                <ul class="news-twitts p-1">
-                    <li class="news-twitt-cat">Twitt kategorisi</li>
-                    <li class="news-twitt-header">#Twitt başlığı</li>
-                    <li class="news-twitt-amount">30,2B Tweet</li>
-                </ul>
-                <ul class="news-twitts p-1">
-                    <li class="news-twitt-cat">Twitt kategorisi</li>
-                    <li class="news-twitt-header">#Twitt başlığı</li>
-                    <li class="news-twitt-amount">30,2B Tweet</li>
-                </ul>
-                <ul class="news-twitts p-1">
-                    <li class="news-twitt-cat">Twitt kategorisi</li>
-                    <li class="news-twitt-header">#Twitt başlığı</li>
-                    <li class="news-twitt-amount">30,2B Tweet</li>
-                </ul>
-                <ul class="news-twitts p-1">
-                    <li class="news-twitt-cat">Twitt kategorisi</li>
-                    <li class="news-twitt-header">#Twitt başlığı</li>
-                    <li class="news-twitt-amount">30,2B Tweet</li>
-                </ul>
-                <ul class="news-twitts p-1">
-                    <li class="news-twitt-cat">Twitt kategorisi</li>
-                    <li class="news-twitt-header">#Twitt başlığı</li>
-                    <li class="news-twitt-amount">30,2B Tweet</li>
-                </ul>
-                <ul class="news-twitts p-1">
-                    <li class="news-twitt-cat">Twitt kategorisi</li>
-                    <li class="news-twitt-header">#Twitt başlığı</li>
-                    <li class="news-twitt-amount">30,2B Tweet</li>
-                </ul>
+    <aside class="col-4 col-lg-3 bg-light" style="height:100vh;">
+        <div class="search-con col-12 d-flex justify-content-center">
+            <form class="col-11 d-flex " role="search">
+                <div class="input-group ">
+                    <span class="bg-white border-end-0 rounded-start  border d-none d-md-flex  align-items-center"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 1024 1024"
+                            class="icon ms-2" version="1.1">
+                            <path d="M622.4 682.453333l60.330667-60.309333 256.405333 256.405333-60.330667 60.309334z"
+                                fill="#616161" />
+                            <path
+                                d="M426.666667 426.666667m-341.333334 0a341.333333 341.333333 0 1 0 682.666667 0 341.333333 341.333333 0 1 0-682.666667 0Z"
+                                fill="#616161" />
+                            <path d="M692.266667 753.92l60.309333-60.330667 185.514667 185.514667-60.330667 60.330667z"
+                                fill="#37474F" />
+                            <path
+                                d="M426.666667 426.666667m-277.333334 0a277.333333 277.333333 0 1 0 554.666667 0 277.333333 277.333333 0 1 0-554.666667 0Z"
+                                fill="#64B5F6" />
+                            <path
+                                d="M573.866667 302.933333c-36.266667-42.666667-89.6-68.266667-147.2-68.266666s-110.933333 25.6-147.2 68.266666c-8.533333 8.533333-6.4 23.466667 2.133333 29.866667 8.533333 8.533333 23.466667 6.4 29.866667-2.133333C341.333333 296.533333 381.866667 277.333333 426.666667 277.333333s85.333333 19.2 115.2 53.333334c4.266667 4.266667 10.666667 8.533333 17.066666 8.533333 4.266667 0 10.666667-2.133333 12.8-4.266667 8.533333-8.533333 8.533333-23.466667 2.133334-32z"
+                                fill="#BBDEFB" />
+                        </svg></span>
+                    <input class="form-control border-start-0  border " style="box-shadow:none; width: 150px;"
+                        type="text" placeholder="Twitter'da Ara" id="example-search-input">
+                </div>
+            </form>
+        </div>
+        <div class="news-con col-12 mt-3 d-flex justify-content-center">
+            <div class="news bg-white p-1 pe-0 col-12 col-sm-11 rounded-3">
+                <h5>İlgini çekebilecek gündemler</h5>
+                <div class="news-twitts-con ">
+                    <ul class="news-twitts p-1">
+                        <li class="news-twitt-cat">Twitt kategorisi</li>
+                        <li class="news-twitt-header">#Twitt başlığı</li>
+                        <li class="news-twitt-amount">30,2B Tweet</li>
+                    </ul>
+                    <ul class="news-twitts p-1">
+                        <li class="news-twitt-cat">Twitt kategorisi</li>
+                        <li class="news-twitt-header">#Twitt başlığı</li>
+                        <li class="news-twitt-amount">30,2B Tweet</li>
+                    </ul>
+                    <ul class="news-twitts p-1">
+                        <li class="news-twitt-cat">Twitt kategorisi</li>
+                        <li class="news-twitt-header">#Twitt başlığı</li>
+                        <li class="news-twitt-amount">30,2B Tweet</li>
+                    </ul>
+                    <ul class="news-twitts p-1">
+                        <li class="news-twitt-cat">Twitt kategorisi</li>
+                        <li class="news-twitt-header">#Twitt başlığı</li>
+                        <li class="news-twitt-amount">30,2B Tweet</li>
+                    </ul>
+                    <ul class="news-twitts p-1">
+                        <li class="news-twitt-cat">Twitt kategorisi</li>
+                        <li class="news-twitt-header">#Twitt başlığı</li>
+                        <li class="news-twitt-amount">30,2B Tweet</li>
+                    </ul>
+                    <ul class="news-twitts p-1">
+                        <li class="news-twitt-cat">Twitt kategorisi</li>
+                        <li class="news-twitt-header">#Twitt başlığı</li>
+                        <li class="news-twitt-amount">30,2B Tweet</li>
+                    </ul>
+                    <ul class="news-twitts p-1">
+                        <li class="news-twitt-cat">Twitt kategorisi</li>
+                        <li class="news-twitt-header">#Twitt başlığı</li>
+                        <li class="news-twitt-amount">30,2B Tweet</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</aside>
+    </aside>
 
-<!-- MAIN PAGE -->
+    <!-- MAIN PAGE -->
 
-<article class="col-8 col-lg-6 bg-secondary" style="height: 100vh;">Anasayfa</article>
+    <article class="col-8 col-lg-6 bg-light" style="height: 100vh;">
+        <div class="row tweetAt col-12 mt-3">
+            <div class="col-1">
+                <img src="" alt="" class=" rounded-circle bg-dark me-1" style="height: 50px; width:50px; ">
+            </div>
+            <div class="col-11 ">
+                <div class="col-12 profil m-0 p-0">
 
-<!-- RIGHT SIDE -->
-<aside class=" col-lg-3 d-none d-lg-inline page-right-side p-0 bg-light" style="height:100vh;">
+                    <div class="mb-3">
+                        
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Neler oluyor?" rows="2" maxlength="140"></textarea>
+                      </div>
+                    
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                    
+                    <button class="btn btn-sm btn-info px-3 text-white fw-bolder rounded-pill">Tweetle</button>
+                </div>
+            </div>
 
-    <div class="news-con col-12 mt-3 d-flex justify-content-center">
-        <div class="news bg-white p-1 col-11 rounded-3">
-            <h5>Kimi takip etmeli</h5>
-            <div class="news-twitts-con ">
-                <ul class="news-twitts p-1 d-flex align-items-center ">
+
+            
+
+        </div>
+        <hr>
+    </article>
+
+    <!-- RIGHT SIDE -->
+    <aside class=" col-lg-3 d-none d-lg-inline page-right-side p-0 bg-light" style="height:100vh;">
+
+        <div class="news-con col-12 mt-3 d-flex justify-content-center">
+            <div class="news bg-white p-1 col-11 rounded-3">
+                <h5>Kimi takip etmeli</h5>
+                <div class="news-twitts-con ">
+                    <ul class="news-twitts p-1 d-flex align-items-center ">
                         <img src="" alt="" class="col-2 rounded-circle bg-dark me-1" style="height: 30px; width:30px; ">
                         <div class="col-6 profil m-0 p-0">
                             <p class="profile-name m-0 p-0">Yusuf Duru</p>
@@ -96,8 +121,8 @@
                         <div class="col-4 d-flex justify-content-end">
                             <button class="btn btn-sm btn-info rounded-pill ms-1 ">Takip Et</button>
                         </div>
-                </ul>
-                <ul class="news-twitts p-1 d-flex align-items-center ">
+                    </ul>
+                    <ul class="news-twitts p-1 d-flex align-items-center ">
                         <img src="" alt="" class="col-2 rounded-circle bg-dark me-1" style="height: 30px; width:30px; ">
                         <div class="col-6 profil m-0 p-0">
                             <p class="profile-name m-0 p-0">Yusuf Duru</p>
@@ -106,8 +131,8 @@
                         <div class="col-4 d-flex justify-content-end">
                             <button class="btn btn-sm btn-info rounded-pill ms-1">Takip Et</button>
                         </div>
-                </ul>
-                <ul class="news-twitts p-1 d-flex align-items-center ">
+                    </ul>
+                    <ul class="news-twitts p-1 d-flex align-items-center ">
                         <img src="" alt="" class="col-2 rounded-circle bg-dark me-1" style="height: 30px; width:30px; ">
                         <div class="col-6 profil m-0 p-0">
                             <p class="profile-name m-0 p-0">Yusuf Duru</p>
@@ -116,19 +141,16 @@
                         <div class="col-4 d-flex justify-content-end">
                             <button class="btn btn-sm btn-info rounded-pill ms-1">Takip Et</button>
                         </div>
-                </ul>
-                
-                
+                    </ul>
+
+
+                </div>
             </div>
         </div>
-    </div>
 
-</aside>
+    </aside>
 
 </section>
 
 
 {% endblock body %}
-
-
-
