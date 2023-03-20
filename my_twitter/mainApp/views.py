@@ -9,7 +9,11 @@ def index(request):
     return render (request, "index.html")
 
 def home(request):
-    return render (request, "home.html")
+    
+    context = {
+        "userb" : Userinfo.objects.get(user=request.user)
+    }
+    return render (request, "home.html",context)
 
 def userProfile(request):
     return render (request, "userprofile.html")
@@ -64,3 +68,9 @@ def loginUser(request):
             return redirect('login')
     
     return render (request, "login.html")
+
+# ------------ ÇIKIŞ ----------------------------------------------
+def userLogout(request):  
+    logout(request)
+    return redirect('/')
+# ------------ ÇIKIŞ ----------------------------------------------
