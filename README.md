@@ -1,4 +1,4 @@
 # twitterAlternative
-Farklı tasarımda bir twitter
+Python-Django ile farklı tasarımda bir twitter
 -ysfdr
 ...
