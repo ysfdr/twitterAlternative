@@ -30,8 +30,8 @@
 
     <article class="col-8 col-lg-6 ">
         <div class="col-12 ">
-            <form id="regForm" action="">
-
+            <form id="regForm" action="" method="POST">
+                {% csrf_token %}
                 <div style="overflow:auto; height:60px;">
                     <div style="float:left;">
                         <button type="button" class="btn btn-sm btn-light mb-4 " id="prevBtn"
@@ -49,8 +49,8 @@
                     <label for="validationServer01" class="form-label">İsim</label>
                     <input type="text" class="form-control " name="name" id="validationServer01" required>
 
-                    <label for="validationServer05" class="form-label">E-mail</label>
-                    <input type="email" class="form-control " name="email" id="validationServer06"
+                    <label for="validationServer05" class="form-label">Kullanıcı Adı</label>
+                    <input type="text" class="form-control " name="username" id="validationServer06"
                         aria-describedby="validationServer05Feedback" required>
 
                     <br>
@@ -59,7 +59,7 @@
                     <label for="validationServer03" class="form-label">Doğum Tarihi</label>
                     <p class="text-secondary">Bu, herkese açık olarak gösterilmeyecek. Bu hesap bir işletme, evcil
                         hayvan veya başka bir şey için olsa bile kendi yaşını doğrulaman gerekir.</p>
-                    <input type="date" class="form-control " name="name" id="validationServer03" required>
+                    <input type="date" class="form-control " name="bdate" id="validationServer03" required>
 
                 </div>
 
@@ -69,7 +69,7 @@
                     <input type="password" class="form-control " name="password1" id="validationServer12"
                         required>
                     <label for="validationServer13" class="form-label">Parola Tekrar</label>
-                    <input type="password" class="form-control " name="password1" id="validationServer13"
+                    <input type="password" class="form-control " name="password2" id="validationServer13"
                         required>
                 </div>
 
@@ -78,7 +78,7 @@
                     <br>
                     <h4>Twitter içeriğini web'de nerede gördüğünü takip et</h4>
                     <br>
-                    <span><input class="form-check-input " type="checkbox" id="gridCheck" checked> Twitter bu verileri
+                    <span><input class="form-check-input " name="agree" type="checkbox" value="True" id="gridCheck" checked> Twitter bu verileri
                         deneyimini kişiselleştirmek için kullanır. Bu web gezintisi geçmişi hiçbir zaman
                         adın, e-posta adresin veya telefon numaranla saklanmayacaktır.
                     </span>

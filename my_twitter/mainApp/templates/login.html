@@ -9,10 +9,10 @@
     <aside class="col-4 col-lg-3 bg-light" style="height:100vh;">
 
         <div class="news-con col-12 mt-5 row d-flex justify-content-center">
-            
+
             <p class="col-12 text-center">Henüz bir hesabın yok mu?</p>
             <div class="buttons-con row justify-content-center">
-                
+
                 <a href="/register/" class="col-12 d-flex justify-content-center text-decoration-none">
                     <button
                         class="col-9 btn btn-primary rounded-pill px-4 my-2 d-flex justify-content-center align-items-center">
@@ -28,7 +28,13 @@
     <!-- MAIN PAGE -->
 
     <article class="col-8 col-lg-6 ">
-
+        
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-info" role="alert">{{ message }}</div>
+        {% endfor %}
+        {% endif %}
+            
         <div class="row d-flex justify-content-center">
             <div class="col-12 d-flex mt-4 justify-content-center ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 16 16" fill="none">
@@ -74,14 +80,15 @@
                         veya
                     </div>
                     <div class="col-7 ">
-                        
-                        <input type="email" class="form-control my-3" placeholder="E-posta adresi" name="email"
-                            id="validationServer06" aria-describedby="validationServer05Feedback" required>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <input type="text" class="form-control my-3" placeholder="Kullanıcı Adı" name="username"
+                                id="validationServer06" aria-describedby="validationServer05Feedback" required>
 
-                        <input type="password" class="form-control " placeholder="Parola" name="password1" id="validationServer12"
-                            required>    
-                        <button class="btn btn-success col-12  my-4 rounded-pill">Giriş Yap</button>
-
+                            <input type="password" class="form-control " placeholder="Parola" name="password"
+                                id="validationServer12" required>
+                            <button type="submit" class="btn btn-success col-12  my-4 rounded-pill">Giriş Yap</button>
+                        </form>
                         <button class="btn btn-light col-12 border rounded-pill">Şifreni mi unuttun?</button>
                     </div>
                 </div>
@@ -131,11 +138,11 @@
                     </button>
 
                     <a href="/register/" class="col-9 p-0 d-flex justify-content-center text-decoration-none"><button
-                        class="col-12 btn btn-light rounded-pill px-4 my-2 d-flex justify-content-center align-items-center">
+                            class="col-12 btn btn-light rounded-pill px-4 my-2 d-flex justify-content-center align-items-center">
 
-                        <p class="mb-0 mx-2">Hesap oluştur</p>
-                    </button>
-</a>
+                            <p class="mb-0 mx-2">Hesap oluştur</p>
+                        </button>
+                    </a>
 
                 </div>
                 <p class="text-secondary">By signing up, you agree to the <a href="">Terms of Service</a> and <a
