@@ -11,15 +11,53 @@ def index(request):
 def home(request):
     
     context = {
+        "twitts": Twitts.objects.order_by("-id"),
         "userb" : Userinfo.objects.get(user=request.user)
     }
+    
+    if request.method == "POST":
+        user = request.user
+        userinfo = Userinfo.objects.get(user=request.user)
+        twitt_header = "baslık yok"
+        twitt = request.POST["twitt"]
+        like = 0
+        retweet = 0
+        try:
+            media = request.FILES["twittmedia"]       
+        except:
+            media = None       
+    
+        twitted = Twitts(user = user, 
+        userinfo = userinfo, 
+        twitt_header = twitt_header ,
+        twitt = twitt,
+        like = like,
+        retweet = retweet,
+        media = media)
+        twitted.save()  
+        
+        
+        
+        
     return render (request, "home.html",context)
 
 def userProfile(request):
-    return render (request, "userprofile.html")
+    context = {
+        "userb" : Userinfo.objects.get(user=request.user)
+    }
+    return render (request, "userprofile.html",context)
 
 def discover(request):
-    return render (request, "discover.html")
+    
+    try:
+        context = {
+            "userb" : Userinfo.objects.get(user=request.user)
+        }
+    except:
+        context = {
+            
+        }
+    return render (request, "discover.html",context)
 
 def register(request):
     
