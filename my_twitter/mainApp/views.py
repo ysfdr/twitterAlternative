@@ -15,7 +15,7 @@ def home(request):
         "userb" : Userinfo.objects.get(user=request.user)
     }
     
-    if request.method == "POST":
+    if request.method == "POST" and 'btntwitt' in request.POST:
         user = request.user
         userinfo = Userinfo.objects.get(user=request.user)
         twitt_header = "baslık yok"
@@ -35,8 +35,22 @@ def home(request):
         retweet = retweet,
         media = media)
         twitted.save()  
+        print(twitt)
         
         
+    if request.method == "POST" and 'btnlike' in request.POST:
+       
+        twittid = request.POST["liked"]
+        selectedtwitt = Twitts.objects.get(id=twittid)
+        liked = selectedtwitt.like
+        liked +=1 
+        tliked = Twitts.objects.filter(id=twittid).update(like=liked)
+        
+        
+        print("sssssa",tliked)
+        
+        
+            
         
         
     return render (request, "home.html",context)
